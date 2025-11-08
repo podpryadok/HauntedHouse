@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7451631458092109711}
   - component: {fileID: 6598656481735980187}
   - component: {fileID: 5758969754634002111}
+  - component: {fileID: 7843761721624418240}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -188,6 +189,28 @@ MonoBehaviour:
     m_Flags: 0
   walkSpeed: 1
   turnSpeed: 20
+--- !u!95 &7843761721624418240
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6548465544914367076}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
+  m_Controller: {fileID: 9100000, guid: e898413c4cf50476e813eb10774f57d8, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 1
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2283953965846053558
 PrefabInstance:
   m_ObjectHideFlags: 0
