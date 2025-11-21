@@ -426,6 +426,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 7079350759164272881, guid: bcbd8d229001d42b5b3f44274d7ffe73,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -505,6 +510,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 7079350759164272881, guid: bcbd8d229001d42b5b3f44274d7ffe73,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -635,6 +645,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 8892824464529208230, guid: 4b9a3a219dca549339b5b5ad0d3513fd,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -902,6 +917,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 674799647}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &916952698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916952700}
+  - component: {fileID: 916952699}
+  m_Layer: 5
+  m_Name: FaderCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &916952699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916952698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 283caf3134408b84b9820df43b8798cb, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 63be7f5e4cd69ac47aad97c3e6799595,
+    type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!4 &916952700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916952698}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207216123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1301,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 7079350759164272881, guid: bcbd8d229001d42b5b3f44274d7ffe73,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1362,6 +1438,12 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &1392437107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6548465544914367076, guid: 807a0440a5c974e90ab0ebed05f988a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5518653789775559315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1488666903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1425,6 +1507,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 867874715158529667, guid: 4796ece39d0a743b5bbe070d6dca750e,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     - target: {fileID: 2167895724927635450, guid: 4796ece39d0a743b5bbe070d6dca750e,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -1586,6 +1673,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 7079350759164272881, guid: bcbd8d229001d42b5b3f44274d7ffe73,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1659,6 +1751,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1237882584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2015830400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2015830401}
+  - component: {fileID: 2015830402}
+  - component: {fileID: 2015830403}
+  m_Layer: 0
+  m_Name: GameEnding
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2015830401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015830400}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.02, y: 0.5275, z: 45.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2015830402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015830400}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.6123202, y: 2.313411, z: 1.5123177}
+  m_Center: {x: -0.036532998, y: 0.6567055, z: -0.25615883}
+--- !u!114 &2015830403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015830400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892ad7b8e8aa1418a893f6076bde8663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEnding
+  fadeDuration: 1
+  displayImageDuration: 1
+  player: {fileID: 1392437107}
+  uiDocument: {fileID: 916952699}
 --- !u!1 &2095499141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,6 +1994,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 7079350759164272881, guid: bcbd8d229001d42b5b3f44274d7ffe73,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1900,6 +2067,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 867874715158529667, guid: 4796ece39d0a743b5bbe070d6dca750e,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     - target: {fileID: 2167895724927635450, guid: 4796ece39d0a743b5bbe070d6dca750e,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -2023,6 +2195,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1845255800}
+    - target: {fileID: 8892824464529208230, guid: 4b9a3a219dca549339b5b5ad0d3513fd,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2015830403}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2040,3 +2217,5 @@ SceneRoots:
   - {fileID: 778410318}
   - {fileID: 43235438}
   - {fileID: 1237882584}
+  - {fileID: 2015830401}
+  - {fileID: 916952700}
