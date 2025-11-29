@@ -47,7 +47,7 @@ public class GameEnding : MonoBehaviour
         }
         else if (m_IsPlayerCaught)
         {
-            EndLevel(m_CaughtScreen, true,caughtAudio);
+            EndLevel(m_CaughtScreen, true, caughtAudio);
         }
     }
 
@@ -70,8 +70,15 @@ public class GameEnding : MonoBehaviour
             }
             else
             {
-                Application.Quit();
-                Time.timeScale = 0;
+                Time.timeScale = 1f;
+                if (SceneManager.GetActiveScene().buildIndex == 2)
+                {
+                    SceneManager.LoadScene(0);
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
             }
         }
     }
