@@ -71,7 +71,7 @@ public class GameEnding : MonoBehaviour
             else
             {
                 Time.timeScale = 1f;
-                if (SceneManager.GetActiveScene().buildIndex == 2)
+                if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
                 {
                     SceneManager.LoadScene(0);
                 }
