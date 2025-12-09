@@ -648,6 +648,12 @@ MonoBehaviour:
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+--- !u!4 &678269084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1715758595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &875627154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,6 +1679,7 @@ Transform:
   - {fileID: 1762667841}
   - {fileID: 402120195}
   - {fileID: 1061364911}
+  - {fileID: 678269084}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1650093461
@@ -1754,6 +1761,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1513269309}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1715758595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1603172699}
+    m_Modifications:
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.867
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.252
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9966266
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.082069464
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 9.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500380289026086372, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881608350860596388, guid: 0e9010ab0071d47619a62d17ee84f7c7,
+        type: 3}
+      propertyPath: m_Name
+      value: GhostInShower
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e9010ab0071d47619a62d17ee84f7c7, type: 3}
 --- !u!1001 &1754155911
 PrefabInstance:
   m_ObjectHideFlags: 0
