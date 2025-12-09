@@ -19,11 +19,15 @@ public class GameEnding : MonoBehaviour
 
     private VisualElement m_EndScreen;
     private VisualElement m_CaughtScreen;
+    private VisualElement redKey;
+    private VisualElement goldenKey;
 
     void Start()
     {
         m_EndScreen = uiDocument.rootVisualElement.Q<VisualElement>("EndScreen");
         m_CaughtScreen = uiDocument.rootVisualElement.Q<VisualElement>("CaughtScreen");
+        redKey = uiDocument.rootVisualElement.Q<VisualElement>("RedKey");
+        goldenKey = uiDocument.rootVisualElement.Q<VisualElement>("GoldenKey");
     }
 
     void OnTriggerEnter(Collider other)
@@ -59,6 +63,9 @@ public class GameEnding : MonoBehaviour
             m_HasAudioPlayed = true;
         }
 
+        redKey.style.display = DisplayStyle.None;
+        goldenKey.style.display = DisplayStyle.None;
+        
         m_Timer += Time.deltaTime;
         element.style.opacity = m_Timer / fadeDuration;
 

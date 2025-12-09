@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
 
     public float walkSpeed = 1.0f;
     public float turnSpeed = 20f;
+    public UIDocument uiDocument;
+
+    private List<string> m_OwnedKeys = new List<string>();
+    private VisualElement redKey;
+    private VisualElement goldenKey;
 
     Rigidbody m_Rigidbody;
     Vector3 m_Movement;
@@ -20,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
         m_Animator = GetComponent<Animator>();
         m_AudioSource = GetComponent<AudioSource>();
         MoveAction.Enable();
+        redKey = uiDocument.rootVisualElement.Q<VisualElement>("RedKey");
+        goldenKey = uiDocument.rootVisualElement.Q<VisualElement>("GoldenKey");
     }
 
     void FixedUpdate()
@@ -59,5 +68,33 @@ public class PlayerMovement : MonoBehaviour
         {
             m_AudioSource.Stop();
         }
+    }
+
+    public void AddKey(string keyName)
+    {
+        m_OwnedKeys.Add(keyName);
+        switch (keyName)
+        {
+            case "RedKey":
+                redKey.style.display = DisplayStyle.Flex;
+                break;
+            case "GoldenKey":
+                goldenKey.style.display = DisplayStyle.Flex;
+                break;
+        }
+    }
+
+    public bool OwnKey(string keyName)
+    {
+        switch (keyName)
+        {
+            case "RedKey":
+                redKey.style.display = DisplayStyle.None;
+                break;
+            case "GoldenKey":
+                goldenKey.style.display = DisplayStyle.None;
+                break;
+        }
+        return m_OwnedKeys.Contains(keyName);
     }
 }
