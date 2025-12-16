@@ -16,11 +16,11 @@ public class GameEnding : MonoBehaviour
     bool m_IsPlayerCaught;
     float m_Timer;
 
-
     private VisualElement m_EndScreen;
     private VisualElement m_CaughtScreen;
     private VisualElement redKey;
     private VisualElement goldenKey;
+    private Button homeButton;
 
     void Start()
     {
@@ -28,6 +28,16 @@ public class GameEnding : MonoBehaviour
         m_CaughtScreen = uiDocument.rootVisualElement.Q<VisualElement>("CaughtScreen");
         redKey = uiDocument.rootVisualElement.Q<VisualElement>("RedKey");
         goldenKey = uiDocument.rootVisualElement.Q<VisualElement>("GoldenKey");
+    }
+
+    void OnEnable()
+    {
+        homeButton = uiDocument.rootVisualElement.Q<Button>("HomeButton");
+        homeButton.clicked += () =>
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(0);
+        };
     }
 
     void OnTriggerEnter(Collider other)
