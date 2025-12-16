@@ -6,7 +6,6 @@ public class GameEnding : MonoBehaviour
 {
     public float fadeDuration = 1f;
     public float displayImageDuration = 1f;
-    public GameObject player;
     public UIDocument uiDocument;
     public AudioSource exitAudio;
     public AudioSource caughtAudio;
@@ -16,6 +15,7 @@ public class GameEnding : MonoBehaviour
     bool m_IsPlayerCaught;
     float m_Timer;
 
+    private GameObject player;
     private VisualElement m_EndScreen;
     private VisualElement m_CaughtScreen;
     private VisualElement redKey;
@@ -28,6 +28,8 @@ public class GameEnding : MonoBehaviour
         m_CaughtScreen = uiDocument.rootVisualElement.Q<VisualElement>("CaughtScreen");
         redKey = uiDocument.rootVisualElement.Q<VisualElement>("RedKey");
         goldenKey = uiDocument.rootVisualElement.Q<VisualElement>("GoldenKey");
+
+        player = GameObject.FindWithTag("Player");
     }
 
     void OnEnable()
