@@ -7,12 +7,14 @@ namespace StealthGame
 {
     public class MyMainMenu : MonoBehaviour
     {
-        public GameSettings gameSettings;
-
         private UIDocument m_UIDocument;
 
         private Button m_StartButton;
         private Button m_ExitButton;
+        private VisualElement background;
+        private VisualElement selectionScreen;
+        private Button johnButton;
+        private Button ivanButton;
     
         private void Awake()
         {
@@ -23,12 +25,27 @@ namespace StealthGame
         {
             m_StartButton = m_UIDocument.rootVisualElement.Q<Button>("StartButton");
             m_ExitButton = m_UIDocument.rootVisualElement.Q<Button>("ExitButton");
+            background = m_UIDocument.rootVisualElement.Q<VisualElement>("Background");
+            selectionScreen = m_UIDocument.rootVisualElement.Q<VisualElement>("SelectionScreen");
+            ivanButton = m_UIDocument.rootVisualElement.Q<Button>("IvanButton");
+            johnButton = m_UIDocument.rootVisualElement.Q<Button>("JohnButton");
 
             m_StartButton.clicked += () =>
             {
-                //The game scene needs to be set in the Build Profile Scene List
-                //LoadScene(1);
-                m_UIDocument.rootVisualElement.style.display = DisplayStyle.None;
+                background.style.display = DisplayStyle.None;
+                selectionScreen.style.display = DisplayStyle.Flex;
+
+                johnButton.clicked += () =>
+                {
+                    GameSettings.character = 1; // Jon Lemon
+                    LoadScene(1);
+                };
+
+                ivanButton.clicked += () =>
+                {
+                    GameSettings.character = 2; // Ivan
+                    LoadScene(1);
+                };
             };
 
             m_ExitButton.clicked += () =>

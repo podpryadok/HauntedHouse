@@ -75,6 +75,7 @@ public class GameEnding : MonoBehaviour
 
         redKey.style.display = DisplayStyle.None;
         goldenKey.style.display = DisplayStyle.None;
+        homeButton.style.display = DisplayStyle.None;
         
         m_Timer += Time.deltaTime;
         element.style.opacity = m_Timer / fadeDuration;

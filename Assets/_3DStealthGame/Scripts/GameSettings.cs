@@ -1,7 +1,4 @@
-using UnityEngine;
-
-[CreateAssetMenu(fileName = "GameSettings", menuName = "Scriptable Objects/GameSettings")]
-public class GameSettings : ScriptableObject
+public static class GameSettings
 {
-    public int character = 0; // 1 = Jon Lemon, 2 = Ivan
+    public static int character = 1; // 1 = Jon Lemon, 2 = Ivan
 }
