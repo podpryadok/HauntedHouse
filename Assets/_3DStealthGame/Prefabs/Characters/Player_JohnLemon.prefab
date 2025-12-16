@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7882578719289787716}
   - component: {fileID: 4306804624649217807}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player_JohnLemon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,6 +191,7 @@ MonoBehaviour:
     m_Flags: 0
   walkSpeed: 1
   turnSpeed: 20
+  uiDocument: {fileID: 0}
 --- !u!95 &7843761721624418240
 Animator:
   serializedVersion: 7
@@ -334,6 +335,10 @@ PrefabInstance:
     - target: {fileID: 100008, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
       propertyPath: m_Name
       value: JohnLemon_Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
       propertyPath: m_LocalPosition.x

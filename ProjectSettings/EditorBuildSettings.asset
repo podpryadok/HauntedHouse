@@ -17,8 +17,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_3DStealthGame/Scenes/3rd_level.unity
     guid: 15f9946b8401e4562915436c37de9b31
-  - enabled: 0
-    path: Assets/_3DStealthGame/Scenes/Bonus_level.unity
-    guid: b56e3521247bc4d87a236dd96ac5d526
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
